@@ -1,55 +1,100 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
 <link rel="import" href="bower_components/font-roboto/roboto.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
 <link rel="import" href="torch-icon.html">
 
-<polymer-element name="torch-apps" attributes="" vertical layout center>
+<polymer-element name="torch-apps" attributes="" fit vertical layout center center-justified>
   <template>
     <style>
       :host {
         font-family: RobotoDraft;
       }
+      h1 {
+        font-family: RobotoDraft;
+        margin: 8px 0px 0px;
+        font-weight: 300;
+      }
+      p.tagline {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+      .apps {
+        list-style: none;
+        width: 66%;
+        /*text-align: center;*/
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin: 0px;
+      }
+      p {
+        font-weight: 300;
+      }
+
+      ul {
+        padding: 0px;
+      }
+
+      li + li {
+        margin-left: 16px;
+      }
     </style>
 
     <!-- <img src="images/torch.svg"> -->
-    <torch-icon color="#85144B" size="72"></torch-icon>
+    <torch-icon color="white" size="128"></torch-icon>
     <h1>
       Torch Apps
     </h1>
+    <p class="tagline">
+      Mutating the state
+    </p>
+    <ul class="apps" horizontal layout>
 
-    <h2>
-      <a href="about">
-        About
-      </a>
-    </h2>
-
-    <h3>
-      Apps:
-    </h3>
-
-    <ul>
-
-      <li>
-        <a href="http://politi-ko.com">
-          Politiko
-        </a>
+      <li flex one>
+        <paper-button>
+          <a href="http://politi-ko.com">
+            Politiko
+          </a>
+        </paper-button>
+        <p>
+          Compare your views with that of political candidates
+        </p>
       </li>
 
-      <li>
-        <a href="http://rollcall.ph">
-          Rollcall
-        </a>
+      <li flex one>
+        <paper-button>
+          <a href="http://rollcall.ph">
+            Rollcall
+          </a>
+        </paper-button>
+        <p>
+          Check congress attendance
+        </p>
       </li>
 
-      <li>
-        <a href="https://torchapps.github.io/MeetApp">
-          MeetApp
-        </a>
+      <li flex one>
+        <paper-button>
+          <a href="https://torchapps.github.io/MeetApp">
+            MeetApp
+          </a>
+        </paper-button>
+        <p>
+          Moderate your roundtable discussions
+        </p>
       </li>
 
-      <li>
-        <a href="https://torchapps.github.io/butthurt">
-          butthurt
-        </a>
+      <li flex one>
+        <paper-button>
+          <a href="https://torchapps.github.io/butthurt">
+            Butthurt
+          </a>
+        </paper-button>
+        <p>
+          See just how sensitive your people are
+        </p>
       </li>
 
     </ul>
