@@ -12,12 +12,18 @@
       :host(.alt){
         background-color: #85144B;
       }
-      :host(.alt) core-image{
+      :host(.alt) .image-container{
         -webkit-box-ordinal-group: 2;  
           -moz-box-ordinal-group: 2;     
           -ms-flex-order: 2;     
           -webkit-order: 2;  
           order: 2;
+      }
+      :host(:hover) .image-container {
+        margin-top: -16px;
+      }
+      .image-container {
+        transition: all 0.2s;
       }
       .container {
         max-width: 940px;
@@ -38,15 +44,13 @@
       .info {
         padding: 16px 0px;
       }
-
-/*      paper-button /deep/ a {
-        padding: 0px !important;
-      }*/
     </style>
 
     <div class="container" flex horizontal layout>
 
-      <core-image sizing="cover" src="{{imgSrc}}" position="top" flex two></core-image>
+      <div class="image-container" flex two relative>
+        <core-image sizing="cover" src="{{imgSrc}}" position="top" loading="{{imageLoading}}" fit></core-image>
+      </div>
 
       <div class="info" flex one>
         <h2>
