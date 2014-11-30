@@ -1,0 +1,60 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/core-image/core-image.html">
+
+<polymer-element name="torch-product" attributes="name imgSrc src altLayout" vertical layout center>
+  <template>
+    <style>
+      :host {
+        min-height: 256px;
+        background-color: #690F3B;
+      }
+      :host(.alt){
+        background-color: #85144B;
+      }
+      :host(.alt) core-image{
+        -webkit-box-ordinal-group: 2;  
+          -moz-box-ordinal-group: 2;     
+          -ms-flex-order: 2;     
+          -webkit-order: 2;  
+          order: 2;
+      }
+      .container {
+        max-width: 940px;
+        width: 100%;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .info {
+        padding: 16px 0px;
+      }
+    </style>
+
+    <div class="container" flex horizontal layout>
+
+      <core-image sizing="cover" src="{{imgSrc}}" position="top" flex two></core-image>
+
+      <div class="info" flex one>
+        <h2>
+          <a href="{{src}}">
+            {{name}}
+          </a>
+        </h2>
+        <content select="p"></content>
+        <paper-button>
+          <a href="{{src}}">
+            Visit Site
+          </a>
+        </paper-button>
+      </div>
+
+    </div>
+
+  </template>
+  <script>
+    Polymer("torch-product", {
+      
+    });
+  </script>
+</polymer-element>

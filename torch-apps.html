@@ -2,8 +2,9 @@
 <link rel="import" href="bower_components/font-roboto/roboto.html">
 <link rel="import" href="bower_components/paper-button/paper-button.html">
 <link rel="import" href="torch-icon.html">
+<link rel="import" href="torch-product.html">
 
-<polymer-element name="torch-apps" attributes="" fit vertical layout center center-justified>
+<polymer-element name="torch-apps" attributes="" fit>
   <template>
     <style>
       :host {
@@ -20,11 +21,6 @@
         font-size: 12px;
         letter-spacing: 2px;
       }
-      .apps {
-        list-style: none;
-        width: 66%;
-        /*text-align: center;*/
-      }
       a {
         color: white;
         text-decoration: none;
@@ -33,71 +29,57 @@
       p {
         font-weight: 300;
       }
-
-      ul {
-        padding: 0px;
+      section#banner {
+        padding: 64px 0px;
+        background-color: #85144B;
       }
-
-      li + li {
-        margin-left: 16px;
+      paper-button /deep/ a {
+        padding: 0px !important;
       }
+      torch-product + torch-product {
+        margin-top: 16px;
+      }
+/*      torch-product[name="Politiko"]{
+        background-color: #690F3B;
+      }
+      torch-product[name="Rollcall"]{
+        background-color: #85144B;
+      }*/
     </style>
 
     <!-- <img src="images/torch.svg"> -->
-    <torch-icon color="white" size="128"></torch-icon>
-    <h1>
-      Torch Apps
-    </h1>
-    <p class="tagline">
-      Mutating the state
-    </p>
-    <ul class="apps" horizontal layout>
+    <section id="banner" vertical layout center>
+      <torch-icon color="white" size="128"></torch-icon>
+      <h1>
+        Torch Apps
+      </h1>
+      <p class="tagline">
+        Mutating the state
+      </p>
+    </section>
 
-      <li flex one>
-        <paper-button>
-          <a href="http://politi-ko.com">
-            Politiko
-          </a>
-        </paper-button>
+    <section id="apps">
+      <torch-product name="Politiko" imgSrc="images/politiko.png" src="http://politi-ko.com">
         <p>
           Compare your views with that of political candidates
         </p>
-      </li>
-
-      <li flex one>
-        <paper-button>
-          <a href="http://rollcall.ph">
-            Rollcall
-          </a>
-        </paper-button>
+      </torch-product>
+      <torch-product name="Rollcall" imgSrc="images/rollcall.png" src="http://rollcall.ph" class="alt">
         <p>
           Check congress attendance
         </p>
-      </li>
-
-      <li flex one>
-        <paper-button>
-          <a href="https://torchapps.github.io/MeetApp">
-            MeetApp
-          </a>
-        </paper-button>
+      </torch-product>
+      <torch-product name="MeetApp" imgSrc="images/meetapp.png" src="https://torchapps.github.io/MeetApp">
         <p>
           Moderate your roundtable discussions
         </p>
-      </li>
-
-      <li flex one>
-        <paper-button>
-          <a href="https://torchapps.github.io/butthurt">
-            Butthurt
-          </a>
-        </paper-button>
+      </torch-product>
+      <torch-product name="Butthurt" imgSrc="images/butthurt.png" src="https://torchapps.github.io/butthurt" class="alt">
         <p>
           See just how sensitive your people are
         </p>
-      </li>
-
-    </ul>
+      </torch-product>
+    </section>
   </template>
   <script>
     Polymer("torch-apps", {

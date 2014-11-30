@@ -19,6 +19,7 @@
     "polymer": "Polymer/polymer#~0.5.1",
     "font-roboto": "Polymer/font-roboto#~0.5.1",
     "core-iconset-svg": "Polymer/core-iconset-svg#~0.5.1",
-    "paper-button": "Polymer/paper-button#~0.5.1"
+    "paper-button": "Polymer/paper-button#~0.5.1",
+    "core-image": "Polymer/core-image#~0.5.1"
   }
 }
