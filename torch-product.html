@@ -6,28 +6,24 @@
     <style>
       :host {
         min-height: 256px;
-        background-color: #690F3B;
+        /*background-color: #690F3B;*/
         padding-top: 32px;
       }
-      :host(.alt){
-        background-color: #85144B;
-      }
-      :host(.alt) .image-container{
+/*      :host(.alt){
+        background-color: #450C28;
+      }*/
+/*      :host(.alt) .image-container{
         -webkit-box-ordinal-group: 2;  
           -moz-box-ordinal-group: 2;     
           -ms-flex-order: 2;     
           -webkit-order: 2;  
           order: 2;
-      }
+      }*/
       :host(:hover) .image-container {
         margin-top: -16px;
       }
       .image-container {
         transition: all 0.2s;
-      }
-      .container {
-        max-width: 940px;
-        width: 100%;
       }
       .info a {
         transition: all 0.2s;
@@ -47,11 +43,6 @@
     </style>
 
     <div class="container" flex horizontal layout>
-
-      <div class="image-container" flex two relative>
-        <core-image sizing="cover" src="{{imgSrc}}" position="top" loading="{{imageLoading}}" fit></core-image>
-      </div>
-
       <div class="info" flex one>
         <h2>
           <a href="{{src}}" target="_blank">
@@ -59,11 +50,14 @@
           </a>
         </h2>
         <content select="p"></content>
-<!--         <paper-button>
+        <!-- <paper-button> -->
           <a href="{{src}}">
             Visit Site
           </a>
-        </paper-button> -->
+        <!-- </paper-button> -->
+      </div>
+      <div class="image-container" flex two relative>
+        <core-image sizing="cover" src="{{imgSrc}}" position="top" loading="{{imageLoading}}" fit></core-image>
       </div>
 
     </div>
