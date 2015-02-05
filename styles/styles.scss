@@ -1,5 +1,11 @@
 @import "bourbon";
 
+@mixin vertically-center {
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+}
+
 body {
   background-color: #85144B;
   color: white;
@@ -7,13 +13,20 @@ body {
 }
 
 #banner {
-  @include display(flex);
-  @include flex-direction(column);
-  @include align-items(center);
+  @include vertically-center;
+  padding: 64px 0px 24px;
 }
 
 #logo {
   font-size: 128px;
+}
+
+#about {
+  @include vertically-center;
+  padding-bottom: 64px;
+  .container {
+    max-width: 480px;
+  }
 }
 
 h1 {
@@ -29,3 +42,20 @@ p.tagline {
   font-size: 12px;
   letter-spacing: 2px;
 }
+
+a.inline {
+  transition: all 0.2s;
+  display: inline-block;
+  color: white;
+  box-shadow: 0px -1px 0px white inset;
+  text-decoration: none;
+  margin: 0px;
+  &:hover {
+    color: #85144B;
+    box-shadow: 0px -24px 0px white inset;
+  }
+  &:active {
+    box-shadow: 0px -24px 0px white inset, 0px 0px 0px 8px white;
+  }
+}
+
