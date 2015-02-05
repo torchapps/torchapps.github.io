@@ -1,18 +1,24 @@
 @import "bourbon";
 
-@mixin vertically-center {
+@mixin vertical-center {
   @include display(flex);
   @include flex-direction(column);
   @include align-items(center);
 }
 
-@mixin horizontally-center {
+@mixin horizontal-center {
   @include display(flex);
   @include flex-direction(row);
   @include align-items(center);
 }
 
-@mixin horizontally-top {
+@mixin vertical-start {
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(start);
+}
+
+@mixin horizontal-start {
   @include display(flex);
   @include flex-direction(row);
   @include align-items(flex-start);

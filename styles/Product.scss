@@ -38,9 +38,21 @@
     }
   }
   .container {
-    @include horizontally-top;
+    @include horizontal-start;
     max-width: 940px;
     width: 100%;
     margin: 0px auto;
+  }
+}
+
+@media(max-width: 640px){
+  .Product {
+    padding: 16px;
+    .container {
+      @include vertical-start;
+    }
+    &:hover .image-container {
+      top: 0px;
+    }
   }
 }

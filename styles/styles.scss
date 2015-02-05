@@ -22,7 +22,7 @@ blockquote {
 }
 
 #banner {
-  @include vertically-center;
+  @include vertical-center;
   padding: 64px 0px 24px;
 }
 
@@ -31,7 +31,7 @@ blockquote {
 }
 
 #about {
-  @include vertically-center;
+  @include vertical-center;
   padding-bottom: 64px;
   .container {
     max-width: 480px;
@@ -88,6 +88,9 @@ p {
 }
 
 @media(max-width: 640px) {
+  #about {
+    padding: 0px 16px;
+  }
   p {
     font-size: 14px;
   }
