@@ -1,15 +1,24 @@
 @import "bourbon";
-
-@mixin vertically-center {
-  @include display(flex);
-  @include flex-direction(column);
-  @include align-items(center);
-}
+@import "LayoutMixins";
 
 body {
   background-color: #85144B;
   color: white;
   font-family: RobotoDraft;
+  margin: 0px;
+}
+
+footer {
+  background-color: #200110;
+  padding: 48px;
+}
+
+blockquote {
+  text-align: center;
+  margin: 0px;
+  h3 {
+    font-weight: 300;
+  }
 }
 
 #banner {
@@ -63,6 +72,19 @@ p {
   font-weight: 300;
   line-height: 1.4;
   font-size: 16px;
+}
+
+#Politiko {
+  background-color: #690F3B;
+}
+#Rollcall {
+  background-color: #571033;
+}
+#MeetApp {
+  background-color: #450C28;
+}
+#Butthurt {
+  background-color: #34051C;
 }
 
 @media(max-width: 640px) {

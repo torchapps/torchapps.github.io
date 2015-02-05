@@ -5,6 +5,7 @@ var React = require("react");
 
 // custom components
 var Donate = require("./Donate.jsx");
+var Product = require("./Product.jsx");
 
 var Torch = React.createClass({
   render: function() {
@@ -34,6 +35,44 @@ var Torch = React.createClass({
             </p>
           </div>
         </section>
+
+        <section id="apps">
+          <Product 
+            id="Politiko" 
+            name="Politiko" 
+            imgSrc="images/politiko.png" 
+            src="http://politi-ko.com"
+            description="Compare your views with that of political candidates" />
+          <Product 
+            id="Rollcall" 
+            name="Rollcall" 
+            imgSrc="images/rollcall.png" 
+            src="http://rollcall.ph"
+            description="Check congress attendance" />
+          <Product 
+            id="MeetApp" 
+            name="MeetApp" 
+            imgSrc="images/meetapp.png" 
+            src="https://torchapps.github.io/MeetApp"
+            description="Moderate your roundtable discussions" />
+          <Product 
+            id="Butthurt" 
+            name="Butthurt" 
+            imgSrc="images/butthurt.png" 
+            src="https://torchapps.github.io/butthurt"
+            description="Butthurt is a tribute to Filipino (over)sensitivities, and nothing more." />
+        </section>
+
+        <footer>
+          <blockquote>
+            <h3>
+              &quot;The price of freedom is eternal vigilance.&quot;
+            </h3>
+            <p>
+              John Philpot Curran
+            </p>
+          </blockquote>
+        </footer>
 
       </div>
     );
