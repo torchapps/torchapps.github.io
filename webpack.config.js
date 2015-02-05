@@ -15,6 +15,10 @@ Config = {
         loader: "style!css!sass?outputStyle=expanded&" +
           "includePaths[]=" + bourbon
       },
+      {
+        test: /\.css$/,
+        loader: "style!css"
+      },
       // for fonts
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&mimetype=application/font-woff" },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&mimetype=application/font-woff2" },

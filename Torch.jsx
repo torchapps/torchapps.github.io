@@ -11,6 +11,15 @@ var Torch = React.createClass({
     return (
       <div className="Torch">
         <Donate />
+        <section id="banner">
+          <i id="logo" className="icon-torch" />
+          <h1>
+            Torch Apps
+          </h1>
+          <p className="tagline">
+            Mutating the state
+          </p>
+        </section>
       </div>
     );
   }

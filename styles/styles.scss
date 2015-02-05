@@ -5,3 +5,27 @@ body {
   color: white;
   font-family: RobotoDraft;
 }
+
+#banner {
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+}
+
+#logo {
+  font-size: 128px;
+}
+
+h1 {
+  font-family: RobotoDraft;
+  margin: 8px 0px 0px;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+p.tagline {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
