@@ -1,0 +1,31 @@
+{
+  "name": "torchapps.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/torchapps/torchapps.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torchapps/torchapps.github.io/issues"
+  },
+  "homepage": "https://github.com/torchapps/torchapps.github.io",
+  "dependencies": {
+    "css-loader": "^0.9.1",
+    "jsx-loader": "^0.12.2",
+    "node-bourbon": "^1.2.3",
+    "react": "^0.12.2",
+    "sass-loader": "^0.4.0-beta.1",
+    "style-loader": "^0.8.3"
+  },
+  "devDependencies": {
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}

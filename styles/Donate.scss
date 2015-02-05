@@ -1,0 +1,30 @@
+@import "bourbon";
+
+#donate {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  button {
+    @include clearfix;
+    transition: all 0.2s;
+    background-color: #FF851B;
+    border: 0px;
+    display: block;
+    height: 90px;
+    width: 178px;
+    transform: rotateZ(-45deg) translateX(-50%);
+    -webkit-transform: rotateZ(-45deg) translateX(-50%);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    outline: none;
+    padding: 0px;
+    padding-top: 27px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: RobotoDraft;
+    color: #85144B;
+    &:hover {
+      background-color: #FFDC00;
+    }
+  }
+}
