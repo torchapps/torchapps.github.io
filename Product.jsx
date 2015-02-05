@@ -25,8 +25,9 @@ var Product = React.createClass({
             </a>
           </div>
           <div className="image-container">
-            <img src={ this.props.imgSrc} />
-            {/*<core-image sizing="cover" src="{{imgSrc}}" position="top" loading="{{imageLoading}}" fit></core-image>*/}
+            <a href={ this.props.src }>
+              <img src={ this.props.imgSrc} />
+            </a>
           </div>
         </div>
       </div>
