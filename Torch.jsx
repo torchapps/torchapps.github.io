@@ -37,28 +37,28 @@ var Torch = React.createClass({
         </section>
 
         <section id="apps">
-          <Product 
-            id="Politiko" 
-            name="Politiko" 
-            imgSrc="images/politiko.png" 
-            src="http://politi-ko.com"
+          <Product
+            id="Politiko"
+            name="Politiko"
+            imgSrc="images/politiko.png"
+            src="http://torchapps.github.io/politiko"
             description="Compare your views with that of political candidates" />
-          <Product 
-            id="Rollcall" 
-            name="Rollcall" 
-            imgSrc="images/rollcall.png" 
-            src="http://rollcall.ph"
+          <Product
+            id="Rollcall"
+            name="Rollcall"
+            imgSrc="images/rollcall.png"
+            src="http://torchapps.github.io/Rollcall"
             description="Check congress attendance" />
-          <Product 
-            id="MeetApp" 
-            name="MeetApp" 
-            imgSrc="images/meetapp.png" 
+          <Product
+            id="MeetApp"
+            name="MeetApp"
+            imgSrc="images/meetapp.png"
             src="https://torchapps.github.io/MeetApp"
             description="Moderate your roundtable discussions" />
-          <Product 
-            id="Butthurt" 
-            name="Butthurt" 
-            imgSrc="images/butthurt.png" 
+          <Product
+            id="Butthurt"
+            name="Butthurt"
+            imgSrc="images/butthurt.png"
             src="https://torchapps.github.io/butthurt"
             description="Butthurt is a tribute to Filipino (over)sensitivities, and nothing more." />
         </section>
